@@ -16,7 +16,7 @@ export default function Review({ slug }: { slug: string }) {
 
   useEffect(() => {
     if (slug) {
-      fetch(`/data/${slug}.json`)
+      fetch(`/books-review-app/data/${slug}.json`)
         .then((response) => response.json())
         .then((data) => {
           setData(data);

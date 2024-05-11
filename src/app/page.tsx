@@ -23,12 +23,12 @@ export default function Home() {
                 className="h-full hover:border-gray-400 hover:cursor-pointer"
                 key={review?.title}
                 onClick={() => {
-                  if (review?.url) router.push(review.url ?? "");
+                  if (review?.url) router.push(`/${review.url}` ?? "");
                 }}
               >
                 <img
                   alt="Book Cover"
-                  className="aspect-[2/3] ovec:\Users\Fabricio\Downloads\book.icorflow-hidden rounded-t-xl object-cover w-full h-[450px] "
+                  className="aspect-[2/3] overflow-hidden rounded-t-xl object-cover w-full h-[450px] "
                   src={review?.imgUrl}
                 />
                 <CardContent className="space-y-2 p-4">

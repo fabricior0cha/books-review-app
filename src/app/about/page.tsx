@@ -6,7 +6,7 @@ export default function Page() {
           alt="Avatar"
           className="h-32 w-32 rounded-full"
           height="128"
-          src="/images/me.jpg"
+          src="/books-review-app//images/me.jpg"
           style={{
             aspectRatio: "128/128",
             objectFit: "cover",
