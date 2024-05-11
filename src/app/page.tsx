@@ -1,6 +1,7 @@
 "use client";
 import { Card, CardContent } from "@/components/ui/card";
 import data from "@/data/reviews.json";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -19,28 +20,35 @@ export default function Home() {
           </p>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {data?.reviews?.map((review) => (
-              <Card
-                className="h-full hover:border-gray-400 hover:cursor-pointer"
-                key={review?.title}
-                onClick={() => {
-                  if (review?.url) router.push(`/${review.url}` ?? "");
+              <Link
+                key={review?.url}
+                as={{
+                  pathname: "/review/" + review?.slug,
+                }}
+                href={{
+                  pathname: "/review/" + review?.slug,
                 }}
               >
-                <img
-                  alt="Book Cover"
-                  className="aspect-[2/3] overflow-hidden rounded-t-xl object-cover w-full h-[450px] "
-                  src={review?.imgUrl}
-                />
-                <CardContent className="space-y-2 p-4">
-                  <h3 className="text-lg font-semibold">{review?.title}</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    {review?.author}
-                  </p>
-                  <p className="line-clamp-3 text-sm text-gray-500 dark:text-gray-400">
-                    {review?.description}
-                  </p>
-                </CardContent>
-              </Card>
+                <Card
+                  className="h-full hover:border-gray-400 hover:cursor-pointer"
+                  key={review?.title}
+                >
+                  <img
+                    alt="Book Cover"
+                    className="aspect-[2/3] overflow-hidden rounded-t-xl object-cover w-full h-[450px] "
+                    src={review?.imgUrl}
+                  />
+                  <CardContent className="space-y-2 p-4">
+                    <h3 className="text-lg font-semibold">{review?.title}</h3>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      {review?.author}
+                    </p>
+                    <p className="line-clamp-3 text-sm text-gray-500 dark:text-gray-400">
+                      {review?.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>

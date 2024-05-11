@@ -9,7 +9,7 @@ export default function AboutActor() {
           <AvatarImage
             className="object-cover"
             alt="F. Scott Fitzgerald"
-            src="/images/me.jpg"
+            src="/books-review-app//images/me.jpg"
           />
           <AvatarFallback>FPR</AvatarFallback>
         </Avatar>

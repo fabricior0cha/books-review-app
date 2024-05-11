@@ -3,7 +3,7 @@ import Review from "./components/review";
 
 export async function generateStaticParams() {
   return data?.reviews?.map((rev) => ({
-    slug: rev.url,
+    slug: rev.slug,
   }));
 }
 
