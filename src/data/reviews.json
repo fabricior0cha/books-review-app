@@ -1,0 +1,24 @@
+{
+  "reviews": [
+    {
+      "title": "O homem mais rico da Babilônia",
+      "author": "George S. Clason",
+      "imgUrl": "images/homem_mais_rico_da_babilonia.jpg",
+      "description": "O que extrai de conhecimento do 'Homem mais rico da Babilônia' foram lições valiosas para ter uma vida financeira próspera, eu abertamente recomendo que você leia esse livro mesmo já tendo uma boa condição financeira. É uma leitura fácil e tranquila, sem muitas informações, é como se fosse um livro de histórias que te dá alguns conselhos.",
+      "url": "/review/homem_mais_rico_da_babilonia"
+    },
+    {
+      "title": "Nação Dopamina",
+      "author": "Anna Lembke",
+      "imgUrl": "images/nacao_dopamina.jpg",
+      "description": "Em breve"
+    },
+    {
+      "title": "Essencialismo: A disciplinada busca por menos",
+      "author": "Greg McKeown",
+      "imgUrl": "images/essencialismo.jpg",
+      "description": "Em breve"
+      
+    }
+  ]
+}
