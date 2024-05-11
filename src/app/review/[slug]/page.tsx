@@ -2,6 +2,8 @@
 import AboutActor from "@/components/about_actor";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import data from "@/data/reviews.json";
+
 type Data = {
   title: string;
   author: string;
@@ -10,6 +12,12 @@ type Data = {
     paragraphs: string[];
   };
 };
+
+export async function generateStaticParams() {
+  return data?.reviews?.map((rev) => ({
+    slug: rev.url,
+  }));
+}
 
 export default function Page() {
   const path = usePathname();
