@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <main className="flex flex-col items-center justify-center py-12 md:py-24 lg:py-32">
+    <main className="flex flex-col items-center justify-center py-12 md:py-24 lg:py-32 my-auto">
       <div className="flex flex-col items-center justify-center gap-4 py-8">
         <img
           alt="Avatar"

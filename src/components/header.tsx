@@ -3,7 +3,7 @@ import { SVGProps } from "react";
 
 export default function Header() {
   return (
-    <header className="flex h-14 items-center border-b bg-gray-100/40 px-4 md:px-6 dark:bg-gray-800/40">
+    <header className="flex h-14 items-center border-b bg-gray-100/40 p-4 md:p-6 dark:bg-gray-800/40">
       <Link className="flex items-center justify-center" href="/">
         <MountainIcon className="h-6 w-6" />
         <span className="sr-only">Acme Inc</span>

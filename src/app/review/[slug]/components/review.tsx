@@ -1,5 +1,6 @@
 "use client";
 import AboutActor from "@/components/about_actor";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 type Data = {
@@ -12,6 +13,7 @@ type Data = {
 };
 
 export default function Review({ slug }: { slug: string }) {
+  const router = useRouter();
   const [data, setData] = useState<Data>({} as Data);
 
   useEffect(() => {
@@ -20,6 +22,9 @@ export default function Review({ slug }: { slug: string }) {
         .then((response) => response.json())
         .then((data) => {
           setData(data);
+        })
+        .catch((error) => {
+          router.push("/");
         });
     }
   }, [slug]);
