@@ -7,7 +7,6 @@
       "description": "O que extrai de conhecimento do 'Homem mais rico da Babilônia' foram lições valiosas para ter uma vida financeira próspera, eu abertamente recomendo que você leia esse livro mesmo já tendo uma boa condição financeira. É uma leitura fácil e tranquila, sem muitas informações, é como se fosse um livro de histórias que te dá alguns conselhos.",
       "url": "review/homem_mais_rico_da_babilonia",
       "slug": "homem_mais_rico_da_babilonia"
-
     },
     {
       "title": "Nação Dopamina",
@@ -15,13 +14,12 @@
       "imgUrl": "/books-review-app/images/nacao_dopamina.jpg",
       "description": "Em breve",
       "slug": "nacao_dopamina"
-
     },
     {
       "title": "Essencialismo: A disciplinada busca por menos",
       "author": "Greg McKeown",
       "imgUrl": "/books-review-app/images/essencialismo.jpg",
-      "description": "Em breve",
+      "description": "Essencialismo apresenta uma filosofia de vida tendo como sua base a busca disciplinada por menos, onde você deve focar sua atenção a coisas essenciais, o que é difícil por que às vezes nem sabemos o que é essencial de fato. O livro traz dentro dele educativos e práticas além de reflexões para que podermos atingir um estilo de vida menos estressante, mais prazeroso e próspero através das coisas essenciais em nossa vida.",
       "slug": "essencialismo"
     }
   ]
